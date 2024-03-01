@@ -2,10 +2,10 @@
 # Flashing based on: https://github.com/droidian-releng/android-recovery-flashing-template
 
 # Contains fixes for:
-# 1. udev
+# 1. rules file for fog a11
 # 2. scaling
 # 3. fix audio, get from spes
-# 4. boot
+# 4. boot.img
 
 
 # https://droidian.org
