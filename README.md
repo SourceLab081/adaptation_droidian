@@ -2,6 +2,7 @@ These are the contents of the adaptation-droidian-fog-a11.zip file. So to be abl
 https://github.com/droidian-images/droidian/releases
 
 How do I get the boot.img for droidian in this repo?
+
 First compile the fog kernel for droidian from the source:
 https://github.com/SourceLab081/A14-fog
 by using the kernel config vendor/miui11-halium_defconfig
