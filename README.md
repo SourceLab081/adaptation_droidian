@@ -8,18 +8,22 @@ https://github.com/SourceLab081/A14-fog
 by using the kernel config vendor/miui11-halium_defconfig
 After compiling, take the kernel Image.gz to be inserted into the boot.img from another device that is still close (spes). 
 The next process uses the application to unpack and repack boot.img obtained from(you must compile the source first):
+
 https://github.com/osm0sis/mkbootimg
 
 This is how I unpack and repack the boot.img file:
 
 ./unpackbootimg
+
 usage: unpackbootimg
 	-i|--input <filename>
 	[ -o|--output <directory> ]
 	[ -p|--pagesize <size-in-hexadecimal> ]
 
 mkdir spes
+
 ./unpackbootimg -i boot_spes.img -o spes
+
 As a result,  we can see these files in spes folder:
 boot_droidSpes.img-cmdline
 boot_droidSpes.img-header_version
@@ -30,6 +34,7 @@ boot_droidSpes.img-ramdisk
 
 
  ./mkbootimg
+ 
 error: no output filename specified
 usage: mkbootimg
 	[ --kernel <filename> ]
